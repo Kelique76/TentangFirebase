@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AllNewFireApp</string>
+    <string name="formattgl">dd-MM-yyyy</string>
+    <string name="formatdate">dd-MM-yyyy (HH: mm: ss)</string>
+
+    <array name="status">
+        <item>Bujang</item>
+        <item>Nikah</item>
+        <item>Dudo</item>
+        <item>Rondo</item>
+    </array>
+    <string name="title_activity_maps">Map</string>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/isi_blog_dilayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/gbrBlog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_btn"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvIsiJudul"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:text="isi judul"
+            android:textAllCaps="true"
+            android:textColor="#1206f4"
+            android:textStyle="bold"/>
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_thumb_up_white_24dp"
+                android:layout_weight="1"
+                android:id="@+id/ilikePic"
+                android:background="@drawable/circlebackgroundyellow"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvIsiBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:text="ISI BERITA"
+            android:textColor="#000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.jackandphantom.circularimageview.CircleImage
+                android:id="@+id/circleImage"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+                app:add_shadow="true"
+                app:border_color="#e9e3e3"
+                app:border_width="3dp"
+                app:shadow_color="#745d5d"
+                app:shadow_radius="20"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvIsiPengarang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:text="Pengarang"
+                android:textColor="#000"
+                android:textSize="10dp"
+               />
+                <TextView
+                android:id="@+id/tvNamaPengarang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:text="Gadisa G S"
+                android:textColor="#000"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvtglPost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Tgl Terbit: "
+                android:textColor="#000"
+                android:textSize="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/isitglPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:paddingLeft="10dp"
+                android:text="15 Januari 2017"
+                android:textColor="#000"
+                android:textSize="10dp"
+                />
+            </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bungkus_garis"
+    android:padding="5dp"
+    android:paddingTop="2dp">
+
+    <com.jackandphantom.circularimageview.CircleImage
+        android:id="@+id/circleImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="17dp"
+        android:paddingLeft="8dp"
+        android:src="@drawable/star"
+        app:add_shadow="true"
+        app:border_color="#e9e3e3"
+        app:border_width="1dp"
+        app:shadow_radius="6"/>
+
+    <TextView
+        android:id="@+id/txtNamaAbsensi"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/circleImage"
+        android:text="nama teman"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/circlebackgroundgreen"/>
+
+</RelativeLayout>

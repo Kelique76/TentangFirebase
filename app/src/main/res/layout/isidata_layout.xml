@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jackandphantom.circularimageview.CircleImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/materialbg"
+        app:border_width="3dp"
+        app:border_color="#e9e3e3"
+        app:add_shadow="true"
+        app:shadow_color="#745d5d"
+        app:shadow_radius="20"
+        android:id="@+id/circleImage" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:id="@+id/txtBox"
+       android:layout_toLeftOf="@+id/circleImage">
+       <TextView
+           android:id="@+id/textNama"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="7dp"
+           android:layout_toEndOf="@+id/circleImage"
+           android:text="Nama"
+           android:textStyle="bold"/>
+
+
+       <TextView
+           android:id="@+id/statuta"
+           android:layout_marginTop="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignStart="@+id/textNama"
+           android:layout_centerVertical="true"
+           android:text="Status"
+           android:textColor="#e61f1f"/>
+
+
+
+       <TextView
+           android:id="@+id/alamat"
+           android:layout_marginTop="5dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignStart="@+id/statuta"
+           android:layout_below="@+id/statuta"
+           android:text="alamat"/>
+   </LinearLayout>
+
+</LinearLayout>

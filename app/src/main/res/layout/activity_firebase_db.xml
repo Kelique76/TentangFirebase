@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kelique.allnewfireapp.activity.FirebaseDb.FirebaseDBActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearVer"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLayoutAtas">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdit"
+            android:singleLine="true"
+            android:hint="Nama Lengkap"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/statuSpin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/status"></Spinner>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameLayoutBawah">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameKantor"
+            android:singleLine="true"
+            android:hint="Alamat Kantor"/>
+
+    </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.jackandphantom.circularimageview.CircleImage
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/materialbg"
+                app:border_width="3dp"
+                app:border_color="#e9e3e3"
+                app:add_shadow="true"
+                app:shadow_color="#745d5d"
+                app:shadow_radius="20"
+                android:id="@+id/circleImage" />
+
+            <Button
+                android:id="@+id/btnKirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:background="@drawable/bungkus"
+                android:text="KIRIM"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wadahData"
+        android:layout_below="@+id/linearVer"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kelique.allnewfireapp.activity.FireBlog.BlogActivity">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <com.jackandphantom.circularimageview.CircleImage
+        android:id="@+id/circleImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/materialbg"
+        app:add_shadow="true"
+        app:border_color="#e9e3e3"
+        app:border_width="3dp"
+        app:shadow_color="#745d5d"
+        app:shadow_radius="20"/>
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtJudul"
+        android:layout_width="280dp"
+                android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/circleImage"
+        android:layout_toEndOf="@+id/circleImage"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"/>
+
+    <TextView
+        android:id="@+id/txtJud"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Ditulis Oleh:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtNamaPenulis"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtJud"
+        android:layout_toEndOf="@+id/circleImage"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Penulis"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Posting"
+        android:textStyle="bold"
+        android:id="@+id/textView4"/>
+
+    <TextView
+        android:id="@+id/txtTgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="7dp"
+        android:text="waktu terbit"/>
+   </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/wadahGbr"
+        android:layout_gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="140dp"
+        android:layout_alignEnd="@+id/txtNamaPenulis"
+        android:layout_below="@+id/textView4"
+        android:src="@drawable/star"/>
+
+    <TextView
+        android:id="@+id/txtWadahUtama"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp"
+        android:gravity="start"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="tulisan"/>
+    <Button
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="HAPUS"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:id="@+id/btnHapus"/>
+
+</LinearLayout>

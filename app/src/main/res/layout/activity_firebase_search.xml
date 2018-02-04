@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    tools:context="com.kelique.allnewfireapp.activity.FireSearch.FirebaseSearch">
+
+    <ListView
+        android:id="@+id/data_hasil_RV"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="12dp"/>
+    <EditText
+
+        android:id="@+id/editText"
+        android:paddingLeft="15dp"
+        android:visibility="invisible"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="Cari disini"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageView"
+        android:background="@drawable/bungkus"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:layout_toEndOf="@+id/editText"
+        android:src="@drawable/ic_search_black_24dp"
+        android:background="@drawable/circlebackgroundyellow"
+        android:id="@+id/imageView"/>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        fab:fab_addButtonColorNormal="@color/colorPinkAccent"
+        fab:fab_addButtonColorPressed="@color/white_pressed"
+        fab:fab_addButtonSize="mini"
+        fab:fab_addButtonPlusIconColor="@color/half_black"
+        fab:fab_expandDirection="down"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginEnd="6dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_urut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#07fae6"
+            fab:fab_icon="@drawable/ic_search_black_24dp"
+            fab:fab_colorPressed="@color/white_pressed"
+            fab:fab_title="Cari Data"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/button_kedepan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#19f505"
+            fab:fab_title="Balik lagi"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="#f7db03"
+            fab:fab_icon="@drawable/ic_thumb_up_white_24dp"
+            fab:fab_title="Ke Hal Utama"
+            fab:fab_colorPressed="@color/white_pressed"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+</RelativeLayout>

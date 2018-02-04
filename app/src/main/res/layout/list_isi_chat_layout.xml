@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bungkus_garis"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jackandphantom.circularimageview.CircleImage
+        android:id="@+id/circleImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:paddingLeft="8dp"
+        android:src="@drawable/ic_chat_bubble_outline_black_24dp"
+        app:add_shadow="true"
+        app:border_color="#e9e3e3"
+        app:border_width="1dp"
+        app:shadow_radius="6"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/txtIsi_obrolan"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_tgl_obrolan"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/circleImage"
+            android:background="@drawable/bungkus_chat"
+            android:paddingLeft="7dp"
+            android:textSize="12dp"
+            android:text="haloo nama saya"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"/>
+
+    <TextView
+        android:id="@+id/txt_nama_pengoceh"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtIsi_obrolan"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/circleImage"
+        android:text="nama user"
+        android:textSize="10dp"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:id="@+id/txt_tgl_obrolan"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_nama_pengoceh"
+        android:layout_below="@+id/circleImage"
+        android:layout_marginTop="1dp"
+        android:text="tgl ssat ini"
+        android:textColor="@color/colorAccent"
+        android:textSize="8dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="normal|bold"/>
+    </LinearLayout>
+
+</LinearLayout>
